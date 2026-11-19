@@ -250,7 +250,7 @@ window.setFrame = (frame) => {
   renderer.render(scene, camera);
 
   const act = ACTIVE.find(([a, b]) => t >= a && t <= b);
-  const allVis = fade(t, 0.4, 1.2, 99, 100);
+  const allVis = fade(t, 3.6, 4.3, 99, 100);
   for (const r of ROOMS) {
     const v = new THREE.Vector3(mx(r.x), 1.95, mz(r.y)).project(camera);
     const on = act && act[2].includes(r.id);

@@ -10,6 +10,7 @@
   .lbl { position: absolute; transform: translate(-50%, -50%); background: rgba(255,255,255,.92); color: #3a3a3a; font-weight: 600; font-size: 30px; padding: 8px 20px; border-radius: 30px; box-shadow: 0 6px 18px rgba(0,0,0,.18); white-space: nowrap; transition: none; text-align: center; line-height: 1.1; }
   .lbl.on { background: #2f6f5e; color: #fff; }
   .title { position: absolute; left: 0; right: 0; text-align: center; color: #3b3530; }
+  .title > div.wrap { display: inline-block; background: rgba(255,255,255,.88); padding: 22px 48px; border-radius: 36px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
   #t1 { top: 110px; }
   #t1 .a { font-size: 76px; font-weight: 700; }
   #t1 .b { font-size: 40px; font-weight: 500; color: #6d6259; margin-top: 8px; }
@@ -22,8 +23,8 @@
 <body>
 <div id="stage"></div>
 <div id="labels"></div>
-<div class="title" id="t1"><div class="a">Rumah Kami</div><div class="b">Flat · 3 Bilik · 1 Tandas</div></div>
-<div class="title" id="end"><div class="a">3 Bilik · 1 Tandas</div><div class="b">Ruang Tamu · Dapur · Laundry</div></div>
+<div class="title" id="t1"><div class="wrap"><div class="a">Rumah Kami</div><div class="b">Flat · 3 Bilik · 1 Tandas</div></div></div>
+<div class="title" id="end"><div class="wrap"><div class="a">3 Bilik · 1 Tandas</div><div class="b">Ruang Tamu · Dapur · Laundry</div></div></div>
 <script type="module" src="scene.js"></script>
 </body>
 </html>
